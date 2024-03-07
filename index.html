@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body style="background-color: rgb(94 234 212); min-height: 400vh">
+    <!-- navbar start -->
+    <nav>
+      <div class="container w-full h-16 bg-white fixed bottom-0 rounded-t-3xl">
+        <div class="icon flex justify-around my-1">
+          <a href="#" class="flex flex-col items-center text-slate-600">
+            <i class="fa-solid fa-house text-2xl"></i>
+            <span class="font-bold text-xs mt-1">HOME</span>
+          </a>
+          <a href="#count" class="flex flex-col items-center text-slate-600">
+            <i class="fa-solid fa-weight-scale text-2xl"></i>
+            <span class="font-bold text-xs mt-1">COUNT</span>
+          </a>
+          <a href="#" class="flex flex-col items-center text-slate-600">
+            <i class="fa-solid fa-circle-question text-2xl"></i>
+            <span class="font-bold text-xs mt-1">ASK ME</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- top start -->
+    <div class="container">
+      <div class="flex justify-around">
+        <div class="brand">
+          <i class="fa-solid fa-seedling text-3xl text-rose-800"></i>
+          <span class="font-extrabold text-2xl">DIET SEHAT</span>
+        </div>
+      </div>
+    </div>
+    <!-- top end -->
+
+    <!-- main start -->
+    <main id="main">
+      <div class="paragraf text-center mt-20">
+        <div class="">
+          <h4 class="uppercase font-bold text-md text-txt">
+            badan sehat kunci kebahagiaan
+          </h4>
+
+          <p class="ms-4 text-sm">
+            kesehatan badan sangat mempengaruhi aktifitas kita sehari hari,
+            badan yang ideal lebih memperlancar gerak dan aktivitas kita
+          </p>
+        </div>
+      </div>
+      <div class="container mt-8 py-3 bg-white rounded-3xl w-10/12 mx-auto">
+        <div class="flex flex-wrap ms-5">
+          <div class="w-2/4">
+            <h1 class="font-semibold my-3 uppercase text-txt">
+              sudah ideal berat badan anda?
+            </h1>
+            <p class="text-sm">
+              Apa yang dimaksud dengan berat badan ideal? Berat badan ideal
+              adalah rentang berat badan yang dianggap sehat untuk tinggi badan
+              dan komposisi tubuh seseorang.
+            </p>
+          </div>
+          <div class="w-2/4 mt-7">
+            <img src="src/img/main.png" class="" alt="" />
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="mt-3 text-base">cek berat badan anda</p>
+          <a href="">
+            <button class="bg-txt px-5 rounded-full text-white">cek</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- count start -->
+
+    <section id="count" class="mt-20">
+      <div class="flex flex-wrap w-full">
+        <div class="justify-center flex w-2/2">
+          <img src="src/img/tabel.jpg" alt="" class="rounded-lg" width="75%" />
+        </div>
+        <div class="justify-center flex w-2/2">
+          <div
+            class="box w-[300px] h-full bg-white ms-10 mt-6 rounded-lg relative"
+          >
+            <form action="">
+   
+              <label for="bb" class="text-center block text-sm mt-5 mb-2"
+                >1. Masukan Berat Badan</label
+              >
+              <input
+                type="number"
+                id="bb"
+                class="block ring-2 ring-prime rounded-lg mx-auto text-sm pl-5"
+                placeholder="Input Berat Badan"
+                autocomplete="off"
+              />
+              
+              <label for="tb" class="text-center block text-sm mt-5 mb-2"
+                >2. Masukan Tingg Badan</label
+              >
+              <input
+                type="number"
+                id="tb"
+                class="block ring-2 ring-prime rounded-lg mx-auto text-sm pl-5"
+                placeholder="Input Tinggi Badan"
+                autocomplete="off"
+              />
+              <button type="submit" class="w-20 bg-txt mt-5 mx-auto block rounded-3xl text-base text-white" > Cek</button>
+            </form>
+            <div>
+                <div class="box w-48 h-14 bg-prime mt-5 block mx-auto rounded-md">
+                    <h3 class="font-semibold text-center uppercase text-xs">index massa tubuh anda</h3>
+                    <h4 class="font-bold text-center  text-xl mt-1"></h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- count end -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
