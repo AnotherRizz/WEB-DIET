@@ -22,16 +22,22 @@
     <!-- style -->
     <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body style="background-color: rgb(94 234 212); min-height: 200vh; ">
+  <body style="background-color: rgb(94 234 212); min-height: 400vh">
     <!-- navbar start -->
     <nav>
       <div class="container w-full h-16 bg-white fixed bottom-0 rounded-t-3xl">
         <div class="icon flex justify-around my-1">
-          <a href="index.html" class="flex flex-col items-center text-slate-600">
+          <a
+            href="index.html"
+            class="flex flex-col items-center text-slate-600"
+          >
             <i class="fa-solid fa-house text-2xl"></i>
             <span class="font-bold text-xs mt-1">HOME</span>
           </a>
-          <a href="count.html" class="flex flex-col items-center text-slate-600">
+          <a
+            href="count.html"
+            class="flex flex-col items-center text-slate-600"
+          >
             <i class="fa-solid fa-weight-scale text-2xl"></i>
             <span class="font-bold text-xs mt-1">COUNT</span>
           </a>
@@ -93,52 +99,60 @@
       </div>
     </main>
     <!-- main end -->
-      <!-- count start -->
+    <!-- count start -->
 
-      <section id="count" class="mt-20">
-        <div class="flex flex-wrap justify-center">
-          <div>
-            <img src="src/img/tabel.jpg" width="350"  alt="" />
-          </div>
-          <div class="w-3/4 bg-white mt-5 rounded-lg text-center my-8 shadow-2xl">
-            <div class="my-8">
-              <form action="">
-                <label for="bb" class="font-thin text-xs">*Berat badan</label><br />
-                <input
-                  type="number"
-                  name="bb"
-               
-                  id="bb"
-                  class="rounded-lg ring-1 ring-prime w-2/3 pl-5"
-                /><br />
-                <label for="tb" class="font-thin text-xs ">*Tinggi badan</label><br />
-                <input
-                  type="number"
-                  name="bb"
-                  id="tb"
-                  class="rounded-lg ring-1 ring-prime w-2/3 pl-5"
-                /><br />
-                <button
-                  type="submit"
-                  id="cek"
-                  class="bg-prime rounded-lg w-14 mt-5 mb-3 font-bold text-base text-white"
-                >
-                  CEK
-                </button>
-              </form>
-              <div
-                class="box w-2/3 h-16 mx-auto rounded-xl mt-3  bg-slate-300"
-              >
-                <h1 class="text-xs font-bold px-5">INDEX MASSA TUBUH ANDA:</h1>
-                <p id="hasil" class="mt-1 font-bold text-lg">2,3</p>
-              </div>
-            </div>
+    <section id="count" class="mt-20">
+      <div
+        class="flex flex-wrap justify-center bg-white mt-5 rounded-lg text-center my-8 shadow-2xl"
+      >
+        <div class="w-full mt-2">
+          <form action="" id="count">
+            <label for="bb" class="font-thin text-xs">*Berat badan</label><br />
+            <input
+              type="number"
+              name="beratbadan"
+              value="bb"
+              id="bb"
+              class="rounded-lg ring-1 ring-prime w-2/3 pl-5"
+            /><br />
+            <label for="tb" class="font-thin text-xs">*Tinggi badan</label
+            ><br />
+            <input
+              type="number"
+              name="tinggibadan"
+              value="tb"
+              id="tb"
+              class="rounded-lg ring-1 ring-prime w-2/3 pl-5"
+            /><br />
+            <button
+              type="submit"
+              id="cek"
+              class="bg-prime rounded-lg w-14 mt-5 mb-3 font-bold text-base text-white"
+            >
+              CEK
+            </button>
+          </form>
+          <div class="box w-2/3 h-16 mx-auto rounded-xl mt-3 bg-slate-300">
+            <h1 class="text-xs font-bold px-5">INDEX MASSA TUBUH ANDA:</h1>
+            <p id="hasil" class="mt-1 font-bold text-lg"></p>
           </div>
         </div>
-      </section>
-      <!-- count end -->
+        <div id="kurus" class="hidden">
+          <img src="src/img/1.png" alt="" width="400">
+          <h3 class="uppercase text-sm mb-2 font-semibold text-yellow-400">anda tergolong underweight!</h3>
+        </div>
+        <div id="normal" class="hidden">
+          <img src="src/img/2.png" alt="" width="400">
+          <h3 class="uppercase text-sm mb-2 font-semibold text-yellow-400">anda tergolong ideal!</h3>
+        </div>
+        <div id="gemuk" class="hidden">
+          <img src="src/img/3.png" alt="" width="400">
+          <h3 class="uppercase text-sm mb-2 font-semibold text-yellow-400">anda tergolong overweight!</h3>
+        </div>
+      </div>
+    </section>
+    <!-- count end -->
 
-   
     <script src="src/js/script.js"></script>
   </body>
 </html>
