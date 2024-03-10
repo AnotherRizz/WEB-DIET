@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["index.html","count.html","content.html"],
   theme: {
     extend: {
       colors: {
-        prime: 'rgb(45 212 191);', // Warna utama
-        txt: ' rgb(251 191 36);', 
+        prime: '#9dbdba;', // Warna utama
+        txt1: ' #cee0e6;', 
+        txt2:'#f8b042'
         // Warna sekunder
+      },
+      fontFamily: {
+        paragraf: [' "Playfair Display", serif;'], // Menambahkan font ke dalam konfigurasi Tailwind
+        poppins: ['"Poppins", sans-serif;'], // Menambahkan font ke dalam konfigurasi Tailwind
       },
     },
   },
