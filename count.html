@@ -58,11 +58,12 @@
 
     <section id="count" class="mt-20">
       <div
-        class="flex flex-wrap w-3/4 mx-auto justify-center bg-slate-900 mt-5 rounded-lg text-center my-8 shadow-2xl"
+        class="flex flex-wrap w-3/4 mx-auto justify-center mt-5 bg-teal-700 rounded-lg  border-2 text-center my-8 shadow-2xl relative overflow-hidden"
       >
-        <div class="w-full mt-2">
+      <img src="src/img/count/count-removebg-preview.png" width="200" class="absolute -rotate-12 -right-4 top-24 opacity-40" alt="">
+        <div class="w-full mt-2 z-10">
           <form action="" id="count">
-            <label for="bb" class="font-thin text-xs text-txt1"
+            <label for="bb" class="font-semibold text-xs text-slate-800"
               >*Berat badan</label
             ><br />
             <input
@@ -73,7 +74,7 @@
               id="bb"
               class="rounded-lg ring-1 ring-prime w-2/3 pl-5 font-bold"
             /><br />
-            <label for="tb" class="font-thin text-xs text-txt1"
+            <label for="tb" class="font-semibold text-xs text-slate-800"
               >*Tinggi badan</label
             ><br />
             <input
@@ -94,6 +95,7 @@
           </form>
           <div class="box w-2/3 h-16 mx-auto rounded-xl mt-3 bg-txt1 mb-2">
             <h1 class="text-xs font-bold px-5">INDEX MASSA TUBUH ANDA:</h1>
+           
             <p id="hasil" class="mt-1 font-bold text-lg"></p>
           </div>
         </div>
